@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+	 <!-- Primary Meta Tags -->
+    <title>MMS Exchange</title>
+    <link rel="icon" href="img/logo.svg" type="image/icon type">
+    <meta name="title" content="MMS Exchange">
+    <meta name="description" content="Testing for Our SWD 7 Student ....">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nainglinhtun.000webhostapp.com/">
+    <meta property="og:title" content="MMS Exchange">
+    <meta property="og:description" content="Testing for Our SWD 7 Student ....">
+    <meta property="og:image" content="img/logo.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nainglinhtun.000webhostapp.com/">
+    <meta property="twitter:title" content="MMS Exchange">
+    <meta property="twitter:description" content="Testing for Our SWD 7 Student ....">
+    <meta property="twitter:image" content="img/logo.png">
+    <!-- Primary Meta Tags -->
+
+	<title>Exchange Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="vendor/animate_it/animate.min.css">
+  <link rel="stylesheet" href="css/night-mode.css">
+
+</head>
+<body>
+	<!-- the whole app -->
+    <section class="app">
+
+                <!-- result-section -->
+                <div class="output animate__animated animate__slideInDown">
+                  <div class="brand-container">
+                      <img src="img/logo.svg" class="logo" alt="">
+                      <p class="brand">MMEx</p>
+                  </div> 
+
+
+
+                  <div class="result-container">
+                      <p class="result" id="result">0.00</p>
+                  </div>
+
+                  
+                </div>
+                <!-- result-section -->
+
+
+
+                 <!-- line -->
+                <div class="divider"></div>
+                <!-- line -->
+
+                <div class="animate__animated animate__slideInDown"></div>
+
+                <!-- calculate section -->
+                <form class="calc animate__animated animate__slideInDown" id="calc">
+                      <div class="input-container container">
+                          <label>Input</label>
+                          <!—autofocus mean autofocus when finished loading website-->
+                          <input type="number" class="input" id="input" min="1" placeholder="0.00" autofocus required>
+                      </div>
+
+
+                      <div class="from-container container">
+                          <label>From</label>
+                          <select id="from" class="from" onchange="test()" required>
+                              <option value selected>Select Currancy</option>
+                          </select>
+                      </div>
+
+                      <div class="to-container container">
+                          <label>To</label>
+                          <select id="to"  class="to" required></select>
+                      </div>
+
+
+                      <div class="calculate-container container">
+                          <button class="calc-btn" id="calcBtn">Calculate</button>
+                      </div>
+                    
+                </form>
+                <!-- calculate section -->
+
+                <!-- record-table-section -->
+                  <div class="history-container animate__animated animate__slideInDown">
+                      <table class="history">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historylist">
+                            
+
+                          
+                        </tbody>
+
+                        
+                      </table>
+                    
+                  </div>
+                <!-- record-table-section -->
+                
+    </section>
+    <!-- the whole app -->
+
+    <!-- night mode button section -->
+      <button class="mode-change animate__animated animate__slideInUp" onclick="changeMode();">
+         <i class="fas fa-moon" id="modeIcon"></i>
+      </button>
+    <!-- night mode button section -->
+
+
+	<script src="js/data.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
+
